@@ -9,12 +9,12 @@
 
     <context:property-placeholder location="classpath:myApplication.properties"/>
 
-    <bean id="pet" class="lesson32.Dog">
+    <bean id="pet" class="lesson33.Dog">
         <property name="name" value="${dog.name}"/>
         <property name="age" value="${dog.age}"/>
     </bean>
 
-    <bean id="Person" class="lesson32.Person">
+    <bean id="Person" class="lesson33.Person">
         <constructor-arg ref="pet"/>
         <property name="dog" ref="pet"/>
         <property name="name" value="Liza"/>
